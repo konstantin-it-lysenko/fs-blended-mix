@@ -63,13 +63,39 @@
 // числа від max до min за спаданням
 // Додайте усі парні числа від min до max
 
-const max = 11;
-const min = 0;
-let total = 0;
-for (let i = max; i >= min ; i -= 1) {
-  if (i % 2 === 0) {
-    total += i;
-    console.log("парні", i);
-  }
-}
-console.log(total);
+// const max = 11;
+// const min = 0;
+// let total = 0;
+// for (let i = max; i >= min ; i -= 1) {
+//   if (i % 2 === 0) {
+//     total += i;
+//     console.log("парні", i);
+//   }
+// }
+// console.log(total);
+
+//TODO: № 6  for...of ============================================================
+//Напиши функцію findSmallerNumber(numbers)
+//яка шукає найменше число в масиві.
+//Додай перевірку що функція отримує масив
+// const numbers = [5, 35, 56, 12, 7, 80, 3];
+// const numbers2 = 8;
+
+// const findSmallerNumber = function (arr) {
+//   if (!Array.isArray(arr)) {
+//     return "is not array"; // Перевірка на масивність;
+//   }
+
+//   let minNumber = arr[0];
+
+//   for (const number of arr) {
+//     if (minNumber > number) {
+//       minNumber = number;
+//     }
+//   }
+
+//   return minNumber;
+// };
+
+// console.log(findSmallerNumber(numbers));
+// console.log(findSmallerNumber(numbers2));
