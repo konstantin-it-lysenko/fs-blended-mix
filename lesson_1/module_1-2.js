@@ -106,22 +106,85 @@
 //аргументів і повертає їхнє середнє значення.
 //Додати перевірку, що аргументи це числа./*  */
 
-function caclculateAverage(...args) {
-  //const args = arguments; // операція без rest
-  //let totalCount = args.length;
-  let totalCount = 0;
-  let sum = 0;
+// function caclculateAverage(...args) {
+//   //const args = arguments; // операція без rest
+//   //let totalCount = args.length;
+//   let totalCount = 0;
+//   let sum = 0;
 
-  for (const arg of args) {
-    if (typeof arg !== "number") {
-      continue;
-    }
+//   for (const arg of args) {
+//     if (typeof arg !== "number") {
+//       continue;
+//     }
 
-    sum += arg;
-    totalCount += 1;
-    //totalCount = args.length;
-  }
-  return sum / totalCount;
-}
+//     sum += arg;
+//     totalCount += 1;
+//     //totalCount = args.length;
+//   }
+//   return sum / totalCount;
+// }
 
-console.log(caclculateAverage(10, 10, 20, 200));
+// console.log(caclculateAverage(10, 10, 20, 200));
+
+
+//TODO: № 8 ==============================================================
+// напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+
+// const someArray = [22, 11, 34, 5, 12, 13, 14, 15];
+
+// function totalArray(array) {
+//   const newArray = [];
+
+//   for (let i = 0; i < array.length - 1; i += 1) {
+//     newArray.push(array[i] + array[i + 1]);
+    
+//   }
+//   return newArray;
+// }
+
+// console.log(totalArray(someArray));
+
+
+
+//TODO: № 9 ==============================================================
+//Напишіть функцію logItems(array), яка приймає
+//масив та використовує цикл for, який для кожного
+//елемента масиву виводитиме повідомлення у форматі
+//<номер елемента> - <значення елемента>
+//Нумерація елементів має починатися з першого.
+//['Джаз', 'Блюз', 'Рок-н-рол', 'Реггі', 'Реп']
+
+
+
+//TODO: № 10 ==============================================================
+// Функція formatMessage(message, maxLength)
+// приймає рядок (параметр message) і форматує його,
+// якщо довжина перевищує значення параметрі maxLength.
+
+// // готовые вызовы функции
+// console.log(formatMessage("Curabitur ligula sapien", 16)); //Повертає 'Curabitur ligula...'.
+// console.log(formatMessage("Curabitur ligula sapien", 23)); //Повертає 'Curabitur ligula sapien'.
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); //Повертає 'Nunc sed turpis...'.
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); //Повертає 'Nunc sed turpis a felis in nunc fringilla'.
+
+
+
+//TODO: додаткове) ==========================
+// Напишіть if..else, що відповідає наступному switch:
+// const browser = "Opera"
+// switch (browser) {
+//   case 'Edge':
+//     alert( "You've got the Edge!" );
+//     break;
+
+//   case 'Chrome':
+//   case 'Firefox':
+//   case 'Safari':
+//   case 'Opera':
+//     alert( 'Okay we support these browsers too' );
+//     break;
+
+//   default:
+//     alert( 'We hope that this page looks ok!' );
+// }
