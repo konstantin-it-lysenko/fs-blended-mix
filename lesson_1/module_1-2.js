@@ -99,3 +99,29 @@
 
 // console.log(findSmallerNumber(numbers));
 // console.log(findSmallerNumber(numbers2));
+
+//TODO: № 7 for...of =============================================================
+//Напишіть функцію caclculateAverage()
+//яка приймає довільну кількість
+//аргументів і повертає їхнє середнє значення.
+//Додати перевірку, що аргументи це числа./*  */
+
+function caclculateAverage(...args) {
+  //const args = arguments; // операція без rest
+  //let totalCount = args.length;
+  let totalCount = 0;
+  let sum = 0;
+
+  for (const arg of args) {
+    if (typeof arg !== "number") {
+      continue;
+    }
+
+    sum += arg;
+    totalCount += 1;
+    //totalCount = args.length;
+  }
+  return sum / totalCount;
+}
+
+console.log(caclculateAverage(10, 10, 20, 200));
