@@ -38,22 +38,38 @@
 // значення '1', то у змінну result запишемо 'зима', якщо має значення
 // '2' - 'весна' і так далі. Розв'яжіть завдання через switch-case.
 // Elostay
-const num = 5;
-let result = "";
-switch (num) {
-  case 1:
-    result = "зима";
-    break;
-  case 2:
-    result = "весна";
-    break;
-  case 3:
-    result = "літо";
-    break;
-  case 4:
-    result = "осінь";
-    break;
-  default:
-    result = "Такої пори року немає";
+// const num = 5;
+// let result = "";
+// switch (num) {
+//   case 1:
+//     result = "зима";
+//     break;
+//   case 2:
+//     result = "весна";
+//     break;
+//   case 3:
+//     result = "літо";
+//     break;
+//   case 4:
+//     result = "осінь";
+//     break;
+//   default:
+//     result = "Такої пори року немає";
+// }
+// console.log("💖 ~ result:", result);
+
+// TODO: № 5 на for =====================================================
+//Напишіть цикл, який виводить у консоль
+// числа від max до min за спаданням
+// Додайте усі парні числа від min до max
+
+const max = 11;
+const min = 0;
+let total = 0;
+for (let i = max; i >= min ; i -= 1) {
+  if (i % 2 === 0) {
+    total += i;
+    console.log("парні", i);
+  }
 }
-console.log("💖 ~ result:", result);
+console.log(total);
