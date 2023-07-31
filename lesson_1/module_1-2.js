@@ -138,7 +138,7 @@
 
 //   for (let i = 0; i < array.length - 1; i += 1) {
 //     newArray.push(array[i] + array[i + 1]);
-    
+
 //   }
 //   return newArray;
 // }
@@ -153,16 +153,44 @@
 //елемента масиву виводитиме повідомлення у форматі
 //<номер елемента> - <значення елемента>
 //Нумерація елементів має починатися з першого.
-//['Джаз', 'Блюз', 'Рок-н-рол', 'Реггі', 'Реп']
+// const musicStyles = ['Джаз', 'Блюз', 'Рок-н-рол', 'Реггі', 'Реп'];
 
+// function logItems(arr) {
+//     for (let i = 0; i < arr.length; i += 1) {
+//         console.log(`${i + 1} - ${arr[i]}`);
+//     }
+// }
 
+// logItems(musicStyles);
 
 //TODO: № 10 ==============================================================
 // Функція formatMessage(message, maxLength)
 // приймає рядок (параметр message) і форматує його,
 // якщо довжина перевищує значення параметрі maxLength.
+// 1
+// function formatMessage(message, maxLength) {
+//     if (message.length > maxLength) {
+//         const newArr = message.split('')
+//         newArr.length = maxLength;
+//         const updatedStr = newArr.join('');
+//         return `'${updatedStr}...'.`;
+//     } else {
+//         return `'${message}'.`;
+//     }
+// }
+// 2
+// function formatMessage(message, maxLength) {
+//     return message.length > maxLength ? message.slice(0, maxLength) + '...' : message;
 
-// // готовые вызовы функции
+// }
+// 3
+// function formatMessage(message, maxLength) {
+//     if (message.length > maxLength) {
+//         return message.split('').slice(0, maxLength).join('') + '...';
+//     }
+//     return message;
+// }
+
 // console.log(formatMessage("Curabitur ligula sapien", 16)); //Повертає 'Curabitur ligula...'.
 // console.log(formatMessage("Curabitur ligula sapien", 23)); //Повертає 'Curabitur ligula sapien'.
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); //Повертає 'Nunc sed turpis...'.
@@ -187,4 +215,14 @@
 
 //   default:
 //     alert( 'We hope that this page looks ok!' );
+// }
+
+// const browser = 'Opera';
+
+// if (browser === 'Edge') {
+//     alert("You've got the Edge!");
+// } else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
+//     alert('Okay we support these browsers too');
+// } else {
+//     alert('We hope that this page looks ok!');
 // }
