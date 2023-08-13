@@ -125,14 +125,53 @@
 //showProduct(product) - коллбек приймаючий об'єкт
 //продукту і логірующий їх у консоль
 
-function makeProduct(name, price, callback) {
-  const product = {
-    id: Math.random(),
-    name,
-    price,
-  };
+// function makeProduct(name, price, callback) {
+//   const product = {
+//     id: Math.random(),
+//     name,
+//     price,
+//   };
 
-  return callback(product);
-}
-const showProduct = (product) => product;
-console.log(makeProduct("пельмені", 500, showProduct));
+//   return callback(product);
+// }
+// const showProduct = (product) => product;
+// console.log(makeProduct("пельмені", 500, showProduct));
+
+//TODO № 8 на замикання ✅ ==============================================
+
+// Напишіть функцію makeShef(shefName), яка повертає функцію
+// makeDish(dish), яка памятає імя щефа піл час її виклику
+// Функція  makeDish має логіровать рядок "<імя шефа> is cooking <dish>"
+
+// function makeShef(shefName) {
+//   return function makeDish(dish) {
+//     console.log(`${shefName} is cooking ${dish}`);
+//   };
+// }
+// const nameShef = makeShef("Const");
+// const nameNastya = makeShef("Nastya");
+// nameShef("pelmeny");
+// nameShef("salat");
+// nameNastya("meat");
+
+//  HW
+
+//TODO: № 5 ==============================================================
+// Напиши функцію яка приймає массив чисел і повертає новий массив,
+// унікальних чисел, які не півторюються
+// const numbers = [1, 1, 1, 2, 3, 4, 7, 7, 6, 6, 5, 4, 23, 22, 22, 111, 1, 5];
+
+//TODO: № 9 на замикання ✅ ==============================================
+//Напишіть функцію makeCounter, яка повертає іншу
+//функцію, яка вважає та логує кількість своїх викликів
+
+//TODO: № 10 на замикання ✅ ==============================================
+//Напишіть функцію savePassword(password), яка приймає
+//пароль і повертає внутрішню функцію, що приймає
+//рядок і повертає буль true, якщо рядок збігається зі збереженим
+//паролем і false - якщо не збігається
+
+//TODO: № 11 на замыкание ✅ ==============================================
+//Напишіть функцію для зберігання знижки. Функція повертає
+//Іншу функцію, яка приймає суму покупки
+//і повертає фінальну суму із збереженою знижкою.
