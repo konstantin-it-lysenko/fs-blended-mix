@@ -43,3 +43,23 @@
 //   sum += salary;
 // }
 // console.log(sum);
+
+//TODO: № 3 ================================================================
+// Потрібно написати функцію, яка приймає 2 параметри key та obj,
+// яка буде перебирати об'єкт
+// Якщо у об'єкта є такий ключ - поверне true
+// Є 2 варіанти рішення, спочатку напишемо функцію,
+// потім вирішимо простим способом
+
+const obj = {
+  name: "Igor",
+  car: "Mercedes",
+  carColor: "black",
+};
+
+// const findObject = (key, object) => key in object;
+
+// !1 варіант
+const findObject = (key, object) => Object.keys(object).includes(key);
+
+console.log(findObject("name", obj));
