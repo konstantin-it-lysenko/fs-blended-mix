@@ -126,7 +126,6 @@
 
 // console.log(caclculateAverage(10, 10, 20, 200));
 
-
 //TODO: № 8 ==============================================================
 // напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
 // const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
@@ -144,8 +143,6 @@
 // }
 
 // console.log(totalArray(someArray));
-
-
 
 //TODO: № 9 ==============================================================
 //Напишіть функцію logItems(array), яка приймає
@@ -195,8 +192,6 @@
 // console.log(formatMessage("Curabitur ligula sapien", 23)); //Повертає 'Curabitur ligula sapien'.
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); //Повертає 'Nunc sed turpis...'.
 // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); //Повертає 'Nunc sed turpis a felis in nunc fringilla'.
-
-
 
 //TODO: додаткове) ==========================
 // Напишіть if..else, що відповідає наступному switch:
