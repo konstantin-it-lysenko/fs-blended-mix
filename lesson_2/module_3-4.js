@@ -12,6 +12,9 @@
 //   age: 20,
 //   hobby: "tenis",
 //   premium: true,
+//   greet() {
+//     console.log(`hello ${this.name}`);
+//   },
 // };
 // user.mood = "happy";
 // user.hobby = "skydiving";
@@ -21,3 +24,22 @@
 //   //   console.log(key, user[key]);
 //   console.log(`${key}: ${user[key]}`);
 // }
+// user.greet();
+
+//TODO: № 2 ==============================================================
+//2. У нас есть объект, в котором храняться зарплаты
+//нашей команды
+//Напишите код для сумирования всех зарплат и
+//сохраните его результат в переменной sum.
+//Если объект salaries пуст, то результат должен быть 0
+
+// const salaries = {
+//   Mango: 100,
+//   Poly: 160,
+//   Ajax: 1470,
+// };
+// let sum = 0;
+// for (const salary of Object.values(salaries)) {
+//   sum += salary;
+// }
+// console.log(sum);
