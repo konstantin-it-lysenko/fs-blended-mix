@@ -91,3 +91,25 @@
 //   return
 // };
 // console.log(multiplyNumeric(menu));
+
+//TODO № 6 з колбеком =====================================
+//Напишіть дві функції
+// letMeSeeYourName(callback) - запитує ім'я користувача
+//через prompt та викликає callback функцію
+//greet(name) - коллбек, що приймає ім'я і логірує в консоль
+//Рядок "Привіт <name>"
+//Реалізуй перевірку, що prompt не порожній
+
+// const letMeSeeYourName = callback => {
+//     const answer = prompt('Назви своє ім"я');
+//     if (!answer) {
+//         alert('Введіть своє ім"я'); return
+//     }
+//     return callback(answer);
+// }
+
+// function greet(name) {
+//     alert(`Ти ${name}`)
+// }
+
+// console.log(letMeSeeYourName(greet));
