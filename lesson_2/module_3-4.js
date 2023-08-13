@@ -51,15 +51,43 @@
 // Є 2 варіанти рішення, спочатку напишемо функцію,
 // потім вирішимо простим способом
 
-const obj = {
-  name: "Igor",
-  car: "Mercedes",
-  carColor: "black",
-};
+// const obj = {
+//   name: "Igor",
+//   car: "Mercedes",
+//   carColor: "black",
+// };
 
 // const findObject = (key, object) => key in object;
 
 // !1 варіант
-const findObject = (key, object) => Object.keys(object).includes(key);
+// const findObject = (key, object) => Object.keys(object).includes(key);
 
-console.log(findObject("name", obj));
+// console.log(findObject("name", obj));
+
+//TODO: № 4 ==============================================================
+// Створіть функцію multiplyNumeric(obj),
+// яка множить всі числові властивості об'єкта obj на 2
+
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu",
+// };
+// const multiplyNumeric = (obj) => {
+//   for (const key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//       if (typeof obj[key] === "number") {
+//         obj[key] *= 2;
+//       }
+//     }
+//   }
+//   return obj;
+// !1 варіант
+//   for (let key of Object.values(obj)) {
+//     if (typeof key === "number") {
+//       key *= 2;
+//     }
+//   }
+//   return
+// };
+// console.log(multiplyNumeric(menu));
