@@ -73,18 +73,49 @@
 //Додай метод getInfo(), який повертає рядок:
 //`Користувачеві ${} ${} років і в нього ${} публікацій.`
 
-class User {
-  constructor({ userName, age, numbersOfPost } = {}) {
-    this.userName = userName;
-    this.age = age;
-    this.numbersOfPost = numbersOfPost;
-  }
+// class User {
+//   constructor({ userName, age, numbersOfPost } = {}) {
+//     this.userName = userName;
+//     this.age = age;
+//     this.numbersOfPost = numbersOfPost;
+//   }
 
-  getInfo() {
-    return `Користувачеві ${this.userName} ${this.age} років і в нього ${this.numbersOfPost} публікацій.`;
-  }
+//   getInfo() {
+//     return `Користувачеві ${this.userName} ${this.age} років і в нього ${this.numbersOfPost} публікацій.`;
+//   }
+// }
+
+// const mango = new User({ age: 20, numbersOfPost: 10, userName: "mango" });
+// console.log(mango.getInfo());
+// console.log(typeof User);
+
+//TODO: № 6 на class-и =============================================
+//Напиши клас Client який створює об'єкт
+//з ​​властивостями login email
+//Оголоси приватні властивості #login #email,
+//доступ до яких зроби через геттер та сеттер
+// get clientData() має повертати оюект з переліченими властивостями
+// set changeEmail(newEmail) який перезаписує почту користувача
+
+class Client {
+    #login;
+    #email;
+    constructor({ login, email }) {
+        this.#login = login
+        this.#email = email
+    }
+    get clientData() {
+return {login:this.#login , email:this.#email }
+    }
+
+    set changeEmail(newEmail) {
+        this.#email = newEmail
+    }
 }
 
-const mango = new User({ age: 20, numbersOfPost: 10, userName: "mango" });
-console.log(mango.getInfo());
-console.log(typeof User);
+const newClient = new Client({login : "sheva", email : "email"})
+console.log(newClient);
+
+
+console.log(newClient.changeEmail = "kjhhkjhk");
+console.log(newClient.clientData.email);
