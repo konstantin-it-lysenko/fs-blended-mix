@@ -97,25 +97,78 @@
 // get clientData() має повертати оюект з переліченими властивостями
 // set changeEmail(newEmail) який перезаписує почту користувача
 
-class Client {
-    #login;
-    #email;
-    constructor({ login, email }) {
-        this.#login = login
-        this.#email = email
-    }
-    get clientData() {
-return {login:this.#login , email:this.#email }
-    }
+// class Client {
+//     #login;
+//     #email;
+//     constructor({ login, email }) {
+//         this.#login = login
+//         this.#email = email
+//     }
+//     get clientData() {
+// return {login:this.#login , email:this.#email }
+//     }
 
-    set changeEmail(newEmail) {
-        this.#email = newEmail
-    }
-}
+//     set changeEmail(newEmail) {
+//         this.#email = newEmail
+//     }
+// }
 
-const newClient = new Client({login : "sheva", email : "email"})
-console.log(newClient);
+// const newClient = new Client({login : "sheva", email : "email"})
+// console.log(newClient);
 
 
-console.log(newClient.changeEmail = "kjhhkjhk");
-console.log(newClient.clientData.email);
+// console.log(newClient.changeEmail = "kjhhkjhk");
+// console.log(newClient.clientData.email);
+
+
+
+// TODO: № 7 на class-и =============================================
+// Напиши клас Notes який управляє колекцією нотаток у
+// властивості items.
+// Нотатка - це об'єкт із властивостями text і priority.
+// Додай класу статичний властивість Priopity,
+// який буде зберігати об'єкт із пріоритетами ("high" i "low").
+// Додай методи addNote(note), removeNote(noteName)
+// updatePriority(text, newPriority)
+
+// class Notes {
+//     static Priopity = {
+//         high: "high",
+//         low: "low"
+// }
+//     constructor() {
+//         this.items = [];
+//     }
+
+//     addNote(note) {
+//         return this.items.push(note);
+//     }
+
+//     removeNote(noteName) {
+//         const indexEl = this.items.findIndex(item => item.text === noteName);
+//         return this.items.splice(indexEl, 1);
+//     }
+
+//     updatePriority(text, newPriority) {
+//         const newText = this.items.findIndex(item => item.text === text);
+//         return this.items[newText].priority = newPriority;
+//     }
+// }
+
+// const newNotes = new Notes()
+
+// newNotes.addNote({text: "ковбаса", priority: Notes.Priopity.high})
+//  console.log(newNotes.items)
+
+
+
+//TODO: на class ======================
+//  Написати клас, який буде представляти зоопарк тварин.
+//  Створити загальний клас Animal для тварин.
+// У зоопарку повинні бути різні типи тварин, такі як ссавці, птахи, рептилії тощо.
+// Кожен тип тварин повинен мати свої властивості та методи, наприклад,
+//  методи для отримання інформації про тварину та для годівлі тварин.
+//  Крім того, зоопарк повинен мати метод для додавання тварин до списку та
+// метод для виведення списку всіх тварин у зоопарку.
+
+
