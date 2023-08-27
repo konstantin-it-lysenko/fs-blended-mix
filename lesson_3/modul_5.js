@@ -18,8 +18,6 @@
 
 // foo();
 
-
-
 //TODO: № 3 ==============================================
 //Виправте помилки, щоб код працював
 
@@ -37,3 +35,30 @@
 
 // callAction(item.getQuatity.bind(item));// правильна відповідь
 // callAction(item.getQuatity())// 2 правильний варіант
+
+// //TODO: № 4 ==============================================
+
+// // Функція askPassword приймає 2 колбека і викливає 1 із них в залежності від пароля
+// function askPassword(ok, fail) {
+//   let password = prompt("Password? 🤔");
+//   if (password === "admin") ok();
+//   else fail();
+// }
+// // Створити обект user з властивістю name і двома методами
+// // loginOk() i loginFail()
+// // ці методи виводять в консоль повідомлення у форматі
+// // "<name> logged in" i "<name> failed to log in" відповідно
+// // зроби виклик функції askPassword, прив`язавши в якості аргуметів методи обекта
+// const user = {
+//   name: "Poly",
+//   loginOk() {
+//     console.log(`${this.name} logged in`);
+//   },
+//   loginFail() {
+//     console.log(`${this.name} failed to log in`);
+//   },
+// };
+// const logOk = user.loginOk.bind(user);
+// const logFi = user.loginFail.bind(user);
+// // askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
+// askPassword(logOk, logFi);
