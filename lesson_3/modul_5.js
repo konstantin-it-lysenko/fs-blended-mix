@@ -18,3 +18,22 @@
 
 // foo();
 
+
+
+//TODO: № 3 ==============================================
+//Виправте помилки, щоб код працював
+
+// function callAction(action) {
+//     action();
+//     // return action;
+// }
+
+// const item = {
+//   getQuatity() {
+//     console.log(this.quantity);
+//   },
+//   quantity: 5,
+// };
+
+// callAction(item.getQuatity.bind(item));// правильна відповідь
+// callAction(item.getQuatity())// 2 правильний варіант
