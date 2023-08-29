@@ -144,9 +144,9 @@
 // Функція  makeDish має логіровать рядок "<імя шефа> is cooking <dish>"
 
 // function makeShef(shefName) {
-//   return function makeDish(dish) {
-//     console.log(`${shefName} is cooking ${dish}`);
-//   };
+//     return function makeDish(dish) {
+//         console.log(`${shefName} is cooking ${dish}`);
+//     };
 // }
 // const nameShef = makeShef("Const");
 // const nameNastya = makeShef("Nastya");
@@ -161,9 +161,26 @@
 // унікальних чисел, які не півторюються
 // const numbers = [1, 1, 1, 2, 3, 4, 7, 7, 6, 6, 5, 4, 23, 22, 22, 111, 1, 5];
 
+// function uniqNumbers(array) {
+//     return array.filter((el, index, arr) => arr.indexOf(el) === index);
+// }
+
+// console.log(uniqNumbers(numbers));
+
 //TODO: № 9 на замикання ✅ ==============================================
 //Напишіть функцію makeCounter, яка повертає іншу
 //функцію, яка вважає та логує кількість своїх викликів
+
+// function makeCounter(count) {
+//     return function counter() {
+//         for (let i = 0; i < count; i += 1) {
+//             console.log('Counter was called');
+//         }
+//     };
+// }
+
+// const checkCount = makeCounter(5);
+// checkCount()
 
 //TODO: № 10 на замикання ✅ ==============================================
 //Напишіть функцію savePassword(password), яка приймає
@@ -171,9 +188,28 @@
 //рядок і повертає буль true, якщо рядок збігається зі збереженим
 //паролем і false - якщо не збігається
 
+// function savePassword(password) {
+//     let userPass = 'admin';
+
+//     return function checkPass(str) {
+//         return str === userPass;
+//     }
+// }
+
+// const check = savePassword();
+// console.log(check('admin')); // true
+// console.log(check('123123')); // false
+
 //TODO: № 11 на замыкание ✅ ==============================================
 //Напишіть функцію для зберігання знижки. Функція повертає
 //Іншу функцію, яка приймає суму покупки
 //і повертає фінальну суму із збереженою знижкою.
 
+// function discount(percent) {
+//     return function shopPrice(price) {
+//         return price - (price * percent / 100);
+//     }
+// }
 
+// const userDiscount = discount(10);
+// console.log(userDiscount(5000));
