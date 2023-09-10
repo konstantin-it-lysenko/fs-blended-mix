@@ -25,3 +25,21 @@
 //     el.textContent = index + 1;
 //   });
 // }
+
+//TODO: № 3 ==============================================
+// Кнопка "Приховати" ховає текст і замінює назву кнопки на
+// "Розкрити", при повторному натисканні текст знову стає доступним
+// і кнопка набуває початкового вигляду.
+
+// const btn = document.querySelector("#passwordButton");
+// const input = document.querySelector("#passwordInput");
+
+// btn.addEventListener("click", changeText)
+
+// function changeText() {
+//     const inputType = input.type;
+//     input.type = inputType !== "text" ? "text" : "password"
+//     console.log(input.type);
+
+//     btn.textContent = btn.textContent === "Приховати" ? "Розкрити" : "Приховати"
+// }
