@@ -43,3 +43,71 @@
 
 //     btn.textContent = btn.textContent === "Приховати" ? "Розкрити" : "Приховати"
 // }
+//TODO: № 4 ==============================================
+
+// Кнопка "Зменшити" робить квадрат менше на 10 пікселів, допопка "Збільшити" - більше на 10 пікселів.
+
+// const decrease = document.getElementById("decrease");
+// const increase = document.getElementById("increase");
+// const box = document.getElementById("box");
+
+// decrease.addEventListener("click", onDecreaseClick);
+// increase.addEventListener("click", onIncreaseClick);
+
+// function onDecreaseClick() {
+//   const boxWidth = box.offsetWidth;
+//   const boxHeight = box.offsetHeight;
+//   box.style.width = `${boxWidth - 10}px`;
+//   box.style.height = `${boxHeight - 10}px`;
+// }
+
+// function onIncreaseClick() {
+//   const boxWidth = box.offsetWidth;
+//   const boxHeight = box.offsetHeight;
+//   box.style.width = `${boxWidth + 10}px`;
+//   box.style.height = `${boxHeight + 10}px`;
+// }
+
+// decrease.addEventListener("click", changeBtnSize);
+// increase.addEventListener("click", changeBtnSize);
+// function changeBtnSize(event) {
+//   const boxWidth = box.offsetWidth;
+//   const boxHeight = box.offsetHeight;
+//   const currentBtn = event.target.getAttribute("id");
+
+//   switch (currentBtn) {
+//     case "decrease":
+//       box.style.width = `${boxWidth - 10}px`;
+//       box.style.height = `${boxHeight - 10}px`;
+//       break;
+//     case "increase":
+//       box.style.width = `${boxWidth + 10}px`;
+//       box.style.height = `${boxHeight + 10}px`;
+//       break;
+//   }
+// }
+
+// Home
+/*
+TODO: № 5 ==============================================
+Додайде слухач кліку і визначте, коли клік відбувається
+всередині елемента з id "place" і коли клік припадає поза зоною елемента
+https://developer.mozilla.org/en-US/docs/Web/API/Node/contains
+
+TODO: № 6 ==============================================
+Натиснувши кнопку "Подвоювати", збільшити значення
+у кожному елементі списку у 2 рази
+
+TODO: № 6.1 ==============================================
+Вводимо число у input з id="test" - число
+При кліку на кнопку, у інпут з id="result" повинен буди квадрат цього числа
+Зробити перевірку на число, реалізувати за допомогою alert з текстом
+
+TODO: № 7 ==============================================
+Напишіть інтерфейс, щоб створити список
+Для кожного пункту:
+Запитуйте вміст у користувача за допомогою promt
+створювати пункт та додавати його до списку
+процес припиняється коли користувач натискає ESC
+усі елементи мають створюватись динамічно
+*/
