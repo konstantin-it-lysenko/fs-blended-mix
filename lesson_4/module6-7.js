@@ -15,3 +15,13 @@
 //     firstInputEl.value = secondValue;
 //     secondInputEl.value = firstValue;
 // }
+//TODO: № 2.1 ==============================================
+// При кліку на кнопку, текст параграфів змінюється на їх порядковий номер
+// const btn = document.querySelector("button");
+// const text = document.querySelectorAll("p");
+// btn.addEventListener("click", handleClick);
+// function handleClick() {
+//   text.forEach((el, index) => {
+//     el.textContent = index + 1;
+//   });
+// }
