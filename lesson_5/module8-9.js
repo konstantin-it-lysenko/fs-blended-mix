@@ -9,7 +9,6 @@
 
 const formEl = document.getElementById('task-form');
 const inputEl = document.querySelector('input');
-const buttonEl = document.querySelector('button');
 const list = document.getElementById('task-list');
 
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
