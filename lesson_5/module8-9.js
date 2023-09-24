@@ -88,3 +88,35 @@
 // getValue(prompt("Введіть число"))
 //   .then((value) => console.log(value))
 //   .catch((error) => console.log(error));
+
+// TODO: ЗАДАЧА 4 на інтервали ====================================
+
+// Напишіть функцію printNumbers(from, to), яка виводить число кожну секунду,  починаючи з
+// from i закінчуючи to
+// Можно зробити 2 варіанти
+
+// * зростання
+// function printNumbers(from, to) {
+//   const add = setInterval(() => {
+//     console.log(from);
+//     from += 1;
+//     if (from > to) {
+//       clearInterval(add);
+//     }
+//   }, 1000);
+// }
+
+// printNumbers(12, 66);
+
+// * спадання
+// function printNumbers(from, to) {
+//   const add = setInterval(() => {
+//     console.log(from);
+//     from -= 1;
+//     if (to > from) {
+//       clearInterval(add);
+//     }
+//   }, 1000);
+// }
+
+// printNumbers(80, 66);
