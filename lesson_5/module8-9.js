@@ -89,6 +89,54 @@
 //   .then((value) => console.log(value))
 //   .catch((error) => console.log(error));
 
+
+// TODO: ЗАДАЧА 2  на LocalStorage =========================================
+
+// Зробити перемикач теми. Зберігати тему у локальному сховище.
+// При перезавантаженні сторінки перевіряти сховище та ставити тему, яка там вказана.
+// Додати класи для змін тем
+
+// const themeInputRef = document.querySelector("#checkbox");
+// const bodyThemeRef = document.querySelector("body");
+// const THEME_KEY = "theme";
+// const lightTheme = "light";
+// const darkTheme = "dark";
+
+// const currentTheme = localStorage.getItem(THEME_KEY);
+
+// switch (currentTheme) {
+//   case lightTheme:
+//     bodyThemeRef.classList.add("light");
+//     themeInputRef.checked = true;
+//     break;
+//   case darkTheme:
+//     bodyThemeRef.classList.add("dark");
+//     themeInputRef.checked = false;
+//     break;
+//   default:
+//     bodyThemeRef.classList.add("dark");
+//     themeInputRef.checked = false;
+//     break;
+// }
+
+// themeInputRef.addEventListener("click", handleCheckboxClick);
+
+// function handleCheckboxClick(event) {
+//   if (!event.currentTarget.checked) {
+//     localStorage.setItem(THEME_KEY, lightTheme);
+//     bodyThemeRef.classList.add("light");
+//     bodyThemeRef.classList.remove("dark");
+//   }
+
+//   if (event.currentTarget.checked) {
+//     localStorage.setItem(THEME_KEY, darkTheme);
+//     bodyThemeRef.classList.add("dark");
+//     bodyThemeRef.classList.remove("light");
+//   }
+
+//   console.log(localStorage.getItem(THEME_KEY));
+// }
+
 // TODO: ЗАДАЧА 4 на інтервали ====================================
 
 // Напишіть функцію printNumbers(from, to), яка виводить число кожну секунду,  починаючи з
